@@ -20,7 +20,7 @@
 IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
  
 # Agenda
-[]()
+[기본적인 변수를 다뤄보자](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/variable)
 
 
 Wait Next Step! Stay Tuned!
