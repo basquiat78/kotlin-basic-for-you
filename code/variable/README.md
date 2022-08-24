@@ -1,5 +1,7 @@
 # 가장 먼저 알아야 하는 변수 타입
 
+[테스트 코드](https://github.com/basquiat78/kotlin-basic-for-you/blob/main/code/variable/kotlin/AboutVariable.kt)     
+
 자바의 경우에는 원시 타입, 즉 primitive type과 그것을 감싼 래퍼 클래스가 존재한다.
 
 하지만 코틀린은 래퍼 클래스만 존재한다.
