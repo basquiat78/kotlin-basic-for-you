@@ -20,8 +20,13 @@
 IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
  
 # Agenda
-[기본적인 변수를 다뤄보자](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/variable)
+[1. 기본적인 변수를 다뤄보자](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/variable)       
+
+[2. 널이라는 너를 다루는 사용설명서](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/nullsafehandle)      
 
 
 Wait Next Step! Stay Tuned!
- 
+
+# 잘못된 부분이 있다면 피드백 부탁해요~       
+
+헤이 브로~~ PR 또는 funnyjazz@naver.com으로 부탁헤여~~ 👊
