@@ -11,22 +11,24 @@
 
 # 심플하게 시작하자.
 
-[go to play.kotilnlang](https://play.kotlinlang.org)
+[go to play.kotlinlang.org](https://play.kotlinlang.org)
 
 나의 경우에는 IDE가 아닌 코틀린에서 제공하는 웹 IDE로 작성할 생각이다.
 
 다만 이 부분은 IDE의 막강한 기능을 사용할 수 없기 때문에 코드 작성시 발생하는 컴파일 오류를 확인할 수 없다.
 
 IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
- 
-# Agenda
-[1. 기본적인 변수를 다뤄보자](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/variable)       
 
-[2. 널이라는 너를 다루는 사용설명서](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/nullsafehandle)      
+# Agenda
+[1. 기본적인 변수를 다뤄보자](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/variable)
+
+[2. 널이라는 너를 다루는 사용설명서](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/nullsafehandle)
+
+[3. 스코프 함수를 알아보](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/scopefunction)
 
 
 Wait Next Step! Stay Tuned!
 
-# 잘못된 부분이 있다면 피드백 부탁해요~       
+# 잘못된 부분이 있다면 피드백 부탁해요~
 
-헤이 브로~~ PR 또는 funnyjazz@naver.com으로 부탁헤여~~ 👊
+헤이 브로~~ PR 또는 funnyjazz@naver.com으로 부탁해여~~ 👊
