@@ -193,8 +193,8 @@ String타입의 str변수에 Int타입의 0으로 변경하면 당연히 에러�
 ```Kotlin
 fun main() {
     
-    //var a: String = "test"
-    var a = "test"
+    //val a: String = "test"
+    val a = "test"
     println(a)
     
     a = "change word" // Val cannot be reassigned
