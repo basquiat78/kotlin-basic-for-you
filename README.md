@@ -176,8 +176,19 @@ fun main() {
 }
 ```
 
-val은 어떻게 될까?
+다만 타입이 맞지 않으면 에러가 발생한다.
 
+```Kotlin
+fun main() {
+    var str: String =  "test"
+    println(a)
+    str = 0
+    println(a)
+}
+```
+String타입의 str변수에 Int타입의 0으로 변경하면 당연히 에러가 발생한다.
+
+그렇다면 val은 어떻게 될까?
 
 ```Kotlin
 fun main() {
