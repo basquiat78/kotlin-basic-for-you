@@ -24,8 +24,9 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [2. 널이라는 너를 다루는 사용설명서](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/nullsafehandle)
 
-[3. 스코프 함수를 알아보](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/scopefunction)
+[3. 스코프 함수를 알아보자](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/scopefunction)
 
+[4. 흐름을 제어하라](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/controlflow)     
 
 Wait Next Step! Stay Tuned!
 
