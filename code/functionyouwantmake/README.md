@@ -393,8 +393,8 @@ function Basquiat(name) {
     this.name = name;
 }
 
-Basquiat.prototype.convertToEngName = () => {
-    return name + "eng";
+Basquiat.prototype.convertToEngName = function() {
+    return this.name + "eng";
 }
 
 let basquiat = new Basquiat("test");
