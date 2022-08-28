@@ -30,6 +30,8 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [5. 당신이 원하는 함수를 만들어보자](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/functionyouwantmake)
 
+[6. 오브젝트와 클~라쓰](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/objectandclass)
+
 
 
 Wait Next Step! Stay Tuned!
