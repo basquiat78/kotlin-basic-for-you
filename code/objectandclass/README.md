@@ -186,7 +186,7 @@ fun main() {
     
 }
 
-// seconde contructor로만 생성해본 클래스
+// second constructor로만 생성해본 클래스
 class Basquiat {
     
     var name: String? = null
@@ -203,7 +203,7 @@ class Basquiat {
 // primary 생성자의 경우 constructor
 // 특별한 어노테이션이나 private하게 만들지 않는 이상 생략가능
 //class BasquiatWithC constructor (
-class BasquiatWithC constructor (
+class BasquiatWithC(
     var name: String,
     var age: Int,
 )
@@ -251,7 +251,7 @@ class Test(
 
 하지만 주 생성자가 존재하게 되면 부 생성자는 그 기능을 주 생성자로 위임을 해야 한다.
 
-즉 이걸 자바처럼 훙내내 보려면 (이걸 왜 하고 있는지 모르겟지만 ㅋ)
+즉 이걸 자바처럼 흉내내 보려면 (이걸 왜 하고 있는지 모르겟지만 ㅋ)
 
 두가지 방법으로 처리해야 한다.
 
