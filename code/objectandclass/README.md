@@ -135,7 +135,7 @@ public class Data {
 
 코틀린도 크게 다르지 않지만 이와 관련 독특한 점들이 많다.
 
-코틀린에서는 지바와 같은 방식으로 프로퍼티를 작성할 수 있으며 생성자를 통해서 프로퍼티를 작성하는 독특한 방식을 제공한다.
+코틀린에서는 바와 같은 방식으로 프로퍼티를 작성할 수 있으며 생성자를 통해서 프로퍼티를 작성하는 독특한 방식을 제공한다.
 
 또한 지금까지 클래스를 만들고 사용해 왔는데 자바만 했던 분이라면 상당히 이질감이 들었을 것이다.     
 
@@ -238,8 +238,8 @@ fun main() {
 }
 
 class Test(
-	var name: String,
-    var age: Int
+    var name: String,
+    var age: Int,
 ) {
     constructor() {}
 }
@@ -273,10 +273,10 @@ fun main() {
 }
 
 class Test(
-	var name: String,
-    var age: Int
+    var name: String,
+    var age: Int,
 ) {
-	constructor(): this(name = "", age = 0) {}
+    constructor(): this(name = "", age = 0) {}
 }
 ```
 
@@ -284,12 +284,12 @@ this를 통해 주 생성자에 위임을 한다. 만일 null이고자 한다면
 
 ```Kotlin
 class Test(
-	//var name: String,
-    //var age: Int
+    //var name: String,
+    //var age: Int,
     var name: String?,
-    var age: Int?
+    var age: Int?,
 ) {
-	constructor(): this(null, null) {}
+    constructor(): this(null, null) {}
 }
 ```
 
@@ -335,12 +335,13 @@ fun main() {
 }
 
 class Test(
-	//var name: String,
-    //var age: Int
+    //var name: String,
+    //var age: Int,
     var name: String?,
-    var age: Int?
+    var age: Int?,
 ) {
-	constructor(): this(null, null)
+    constructor(): this(null, null)
+    
     constructor(_age: Int): this(name = null, age = _age)
     //위 코드는 밑에서처럼 작성이 가능하다. 어떤 특정한 로직을 처리한다면 밑에 방식으로
     //constructor(_age: Int): this() {
@@ -401,14 +402,14 @@ sql에서는 이런 것을 좀 방지하기 위해 선행 콤마를 붙인다..
 SELECT name
        , age
        , height
-       // 새로운 컬럶 추가
+       // 새로운 컬럼 추가
        , weigth
     FROM PERSON
 
 SELECT name,
        age,
        height
-       // 새로운 컬럶 추가
+       // 새로운 컬럼 추가
        weigth
     FROM PERSON
 ```
@@ -438,7 +439,7 @@ SELECT name,
 
 ```Kotlin
 class JazzMusician(
-	val name: String? = null
+    val name: String? = null
 )
 ```
 이런 객체가 있다고 생각해 보자.
@@ -457,7 +458,7 @@ fun main() {
 
 ```Kotlin
 class JazzMusician(
-	val name: String,
+    val name: String,
 ) {
     val genre: String
 }
@@ -468,7 +469,7 @@ class JazzMusician(
 
 ```Kotlin
 class JazzMusician(
-	val name: String,
+    val name: String,
 ) {
     val genre: String = "JAZZ"
 }
@@ -482,12 +483,12 @@ class JazzMusician(
 ```Kotlin
 
 class JazzMusician(
-	val name: String,
+    val name: String,
 ) {
     val genre: String
         get() {
-            return "Jazz"
-        }
+           return "Jazz"
+       }
 }
 ```
 콘솔에 해당 뮤지션의 장르는 "Jazz"로 찍힐 것이다.
@@ -500,10 +501,10 @@ class JazzMusician(
 
 ```Kotlin
 class JazzMusician(
-	val name: String,
+    val name: String,
 ) {
-	val genre: String = "JAZZ"
-	    get() {
+    val genre: String = "JAZZ"
+        get() {
             return this.genre.lowercase()
         }
 }
@@ -583,10 +584,10 @@ this.genre 그 자체가 getter를 호출하게 될 것이고 뮤지션의 객�
 
 ```Kotlin
 class JazzMusician(
-	val name: String,
+    val name: String,
 ) {
-	val genre: String = "JAZZ"
-	    get() {
+    val genre: String = "JAZZ"
+        get() {
             return field.lowercase()
         }
 }
@@ -608,9 +609,9 @@ fun main() {
 }
 
 class JazzMusicianVar(
-	var name: String,
+    var name: String,
 ) {
-	var genre: String? = null
+    var genre: String? = null
 }
 ```
 
@@ -635,12 +636,12 @@ fun main() {
 }
 
 class JazzMusicianVar(
-	var name: String,
+    var name: String,
 ) {
-	var genre: String? = null
-    	private set
+    var genre: String? = null
+        private set
     fun changeGenre(_genre: String?) {
-		this.genre = _genre
+        this.genre = _genre
     }
     
 }
@@ -665,12 +666,12 @@ fun main() {
 }
 
 class JazzMusicianVar(
-	var name: String,
+    var name: String,
 ) {
-	var genre: String? = null
+    var genre: String? = null
     //	private set
     //fun changeGenre(_genre: String?) {
-	//	this.genre = _genre
+    //	this.genre = _genre
     //}
         get() {
             // 소문자로 반환하겠다면
@@ -718,13 +719,13 @@ fun main() {
 }
 
 class JazzMusicianProperty(
-	private var _name: String,
+    private var _name: String,
     private var _age: Int,
 ) {
     var name = _name
-		private set
+        private set
     var age = _age
-    	private set
+        private set
     
     fun changeName(_name: String) {
         this.name = _name
@@ -787,7 +788,7 @@ fun main() {
 }
 
 class InitClass(
-	var name: String
+    var name: String
 ) {
     init {
         println("init name is $name")
@@ -801,5 +802,4 @@ class InitClass(
 
 # At a Glance
 
-다음으로 알아 볼 것은 data class와 sealed class 그리고 중첩 클래스에 대해 알아보고자 한다.      
-
+다음으로 알아 볼 것은 data class와 sealed class 그리고 중첩 클래스에 대해 알아보고자 한다.
