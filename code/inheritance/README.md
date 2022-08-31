@@ -37,7 +37,7 @@ data class는 그렇다쳐도 sealed class를 설명하자니 상속을 먼저 �
 
 코틀린은 Object라는 단어보다는 이것을 Any로 명명하고 있다.
 
-뭐 해석하자면 '어떤', '어느'이런 의미인데 아마도 코틀린은 의미를 전달하는데 있어서 이것이 객체라는 말보다 명료하다고 생각한 모양이다.
+뭐 해석하자면 '어떤', '어느' 이런 의미인데 아마도 코틀린은 의미를 전달하는데 있어서 이것이 객체라는 말보다 명료하다고 생각한 모양이다.
 
 ```Kotlin
 /*
@@ -93,7 +93,7 @@ public open class Any {
 
 실제 Any의 코드인데 자바의 Object보다는 좀 심플한 느낌이 든다.
 
-finalize() - 물론 자바 9부터는 deprecated가 붙어 있지만-, 쓰레드를 고려한 wait() 같은 것들은 없고 딱 필요한 녀석들만 정의해 놨다.
+finalize() - 물론 자바 9부터는 deprecated가 붙어 있지만 -, 쓰레드를 고려한 wait() 같은 것들은 없고 딱 필요한 녀석들만 정의해 놨다.
 
 여기서 open이라는 키워드가 눈에 띄는데 이것을 여러분들은 기억해 두면 좋다.
 
@@ -177,7 +177,7 @@ class Instrumental{
 
 extends라는 부분에서부터 벌써 에러가 발생한다.
 
-일반적으로 상속의 경우에는 extends 키워드를 그리고 인터페이스 구현 상속은 implemnets 키워드를 사용하게 되는데 코틀린을 만든 개발자는 엄청 게으른 사람이라서 다른 방식으로 처리했다.
+일반적으로 상속의 경우에는 extends 키워드를 그리고 인터페이스 구현 상속은 implements 키워드를 사용하게 되는데 코틀린을 만든 개발자는 엄청 게으른 사람이라서 다른 방식으로 처리한다.
 
 만일 C라는 클래스가 A라는 클래스와 B와 F라는 인터페이스를 구현한다면
 
@@ -613,10 +613,10 @@ class Parent(override var myIntProp: Int = 0): MyInterface {
 
 interface MyInterface {
     
-    // backing feild를 지원히자 않는다.
+    // backing feild를 지원하지 않는다.
     // 또한 초기화한다면 
     // Property initializers are not allowed in interfaces, 즉 인터페이스에서는 프로퍼티를 초기화 할 수 없다.
-    // 다만 get는 지원한다.
+    // 다만 getter는 지원한다.
     val myIntProp: Int
     	get() {
             return 0
@@ -644,13 +644,13 @@ interface MyInterface {
 
 다만 여기서 몇가지 주의 사항들을 알아야 한다.
 
-코틀린의 인터페이스 내의 프로퍼티들은 backing field를 가질 수 없고 초기화로 값을 활당할 수 없다.
+코틀린의 인터페이스 내의 프로퍼티들은 backing field를 가질 수 없고 초기화로 값을 할당할 수 없다.
 
 그래서 초기값을 할당하기 위해서는 getter로 할당한다.
 
 단 상속구현하는 하위 클래스에서는 오버라이딩한 프로퍼티는 backing field가 지원된다.
 
-근데 재미있는 건 var로 선언히고 get를 만들면 'Property in an interface cannot have a backing field' 메세지를 볼 게 된다.
+근데 재미있는 건 var로 선언하고 get를 만들면 'Property in an interface cannot have a backing field' 메세지를 보게 된다.
 
 결국 var타입으로는 인터페이스에서는 프로퍼티를 만들 수 없다.
 
@@ -756,9 +756,11 @@ fun main() {
 //현란한 드럼 스틱 돌리기와 화려한 드러밍 솔로가 관객을 압도하기 시작한다.
 ```
 
-자 근데 여기 포퍼먼스 관련 인터페이스에 같은 이름의 메소드가 있어서 베이스, 일렉기타, 보컬의 경우에는 이 두개를 다 사용할 수 있다.       
+자 근데 여기 포퍼먼스 관련 인터페이스에 같은 이름의 메소드가 있다.      
 
-그렇게 되면 이 같은 메소드에 대해서 어떤 일이 벌어질까???
+근데 생각해 보면 베이스, 일렉기타, 보컬의 경우에는 이 두개를 다 사용할 수 있다.              
+
+그렇게 되면 이 같은 메소드에 대해서 어떤 일이 벌어질까???      
 
 default메소드든 아니든
 
@@ -808,7 +810,7 @@ class BassGuitar(
 ```
 Many supertypes available, please specify the one you mean in angle brackets, e.g. 'super<Foo>'
 ```
-이런 에러를 보게 된다. 아무래도 여러개의 인터페이스에 같은 메소드가 존재하니 뭘 실행해야 할지 아리송 할 것이다.       
+이런 에러를 보게 된다. 아무래도 여러개의 인터페이스에 같은 메소드가 존재하니 뭘 실행해야 할지 코틀린 입장에서는 아리송 할 것이다.       
 
 근데 에러에 e.g. 뒤에 코드 예제를 보면 그 해답을 알려준다.        
 
@@ -951,6 +953,7 @@ class BassGuitar(
     //}
 
     override fun movablePerformance() {
+        //beforePerformance()
         super<ActionPerformance>.beforePerformance()
         println("베이시스트가 악기를 돌리기도 하고 무대를 종횡무진하며 베이스 슬랩를 펼친다.")
     }
@@ -959,11 +962,16 @@ class BassGuitar(
         super<PlacePerformance>.beforePerformance()
         println("제자리에서 빠른 핑거링으로 속주 솔로를 펼친다.")
     }
-    
-    override fun beforePerformance() {
-        super<PlacePerformance>.beforePerformance()
-        super<ActionPerformance>.beforePerformance()
-    }
+
+   // 인터페이스 수만큼 같은 메소드를 가지고 있다면 그 이름으로 override를 하고
+   // 다음과 같이 선언해 둔다. 그냥 비워둬도 상관없다.
+   // 또는 만일 같은 행위를 한다면 아무거나 하나를 선언하고 
+   // 위코드에서 사용해도 되고 해도 된다.
+   override fun beforePerformance() {
+      //super<PlacePerformance>.beforePerformance()
+      //super<ActionPerformance>.beforePerformance()
+      //super<SomeInterface>.beforePerformance()
+   }
 }
 
 enum class InstrumentalType{

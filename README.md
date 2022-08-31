@@ -34,6 +34,8 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [7. 상속을 알아보자](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/inheritance)
 
+[8. 두 유 노우 데이타 클래스? feat. companion object a.k.a 동반객체](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/doyouknowdataclass)
+
 
 Wait Next Step! Stay Tuned!
 
