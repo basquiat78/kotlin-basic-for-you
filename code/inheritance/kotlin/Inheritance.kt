@@ -226,6 +226,9 @@ class BassGuitar(
     //}
 
     override fun movablePerformance() {
+        //오버라이딩한 메소드로 공통적으로 사용해도 되고
+        // 인터페이스에 맞게
+        //beforePerformance()
         super<ActionPerformance>.beforePerformance()
         println("베이시스트가 악기를 돌리기도 하고 무대를 종횡무진하며 베이스 슬랩를 펼친다.")
     }
@@ -235,9 +238,14 @@ class BassGuitar(
         println("제자리에서 빠른 핑거링으로 속주 솔로를 펼친다.")
     }
 
+    // 충돌 방지를 위해 오버라이드를 한다.
+    // 비워둬도 상관없다. 충돌 방지를 위한 코드이다.
+    // 또는 충돌되는 함수가 똑같은 행위를 한다면 하나를 선언해두고
+    // 내부에서 사용해도 된다.
     override fun beforePerformance() {
-        super<PlacePerformance>.beforePerformance()
-        super<ActionPerformance>.beforePerformance()
+        // 내부에 하나만 선택해서 선언해서 사용해도 된다.
+        //super<PlacePerformance>.beforePerformance()
+        //super<ActionPerformance>.beforePerformance()
     }
 }
 

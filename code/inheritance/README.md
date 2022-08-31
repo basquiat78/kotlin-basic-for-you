@@ -872,8 +872,8 @@ class BassGuitar(
     //}
 
     override fun movablePerformance() {
-        //super<ActionPerformance>.beforePerformance()
-        beforePerformance()
+        //beforePerformance()
+        super<ActionPerformance>.beforePerformance()
         println("베이시스트가 악기를 돌리기도 하고 무대를 종횡무진하며 베이스 슬랩를 펼친다.")
     }
     
