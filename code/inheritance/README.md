@@ -21,7 +21,7 @@ data class는 그렇다쳐도 sealed class를 설명하자니 상속을 먼저 �
 1. 상속은 캡슐화를 해친다.
 2. 따라서 상속을 고려한 설계를 한다면 문서화를 하라. 그렇지 않다면 final로 제한하라
    - 상위/하위 클래스가 순수한 is-a관계일때만! 써라.
-   - is-a도 안심할 수많은 없다.
+   - is-a도 안심할 수 만은 없다.
 
 아니 뭐야? 갑자기 상속에 대해 엄청 부정적으로 말하는 늬앙스를 가지고 있다.      
 
@@ -254,7 +254,7 @@ open class Instrumental{
 
 ```Kotlin
 fun main() {
-	val bassGuitar = BassGuitar(brandName ="Marleaux")
+    val bassGuitar = BassGuitar(brandName ="Marleaux")
     println("bassGuitar brandName is ${bassGuitar.brandName}")
     bassGuitar.sound()
     
@@ -296,7 +296,7 @@ var가 선언된 'string: Int? = 4'는 BassGuitar가 보통 4현이 기준이기
 
 ```Kotlin
 fun main() {
-	val bassGuitar = BassGuitar(brandName ="Marleaux", string = 5, origin = "Germany")
+    val bassGuitar = BassGuitar(brandName ="Marleaux", string = 5, origin = "Germany")
     with(bassGuitar) {
         println("brand is $brandName, 스트링 수 : $string, 원산지 : $origin")
         sound()
@@ -505,7 +505,7 @@ Var-property public open val type: InstrumentalType defined in BassGuitar cannot
 
 어떤 느낌이 드는가? 자바에서 클래스 상속은 아무 생각없이 extends로 참 쉽게 했던거 같다.    
 
-하지만 틀린은 간결함을 추구하는 언어인데도 불구하고 상속을 하는게 생각보다 쉽지 않고 고민을 해야 한다.      
+하지만 코틀린은 간결함을 추구하는 언어인데도 불구하고 상속을 하는게 생각보다 쉽지 않고 고민을 해야 한다.      
 
 이유가 뭘까?
 
@@ -650,7 +650,7 @@ interface MyInterface {
 
 단 상속구현하는 하위 클래스에서는 오버라이딩한 프로퍼티는 backing field가 지원된다.
 
-근데 재미있는 건 var로 선언히거 get를 만들면 'Property in an interface cannot have a backing field' 메세지를 볼 게 된다.
+근데 재미있는 건 var로 선언히고 get를 만들면 'Property in an interface cannot have a backing field' 메세지를 볼 게 된다.
 
 결국 var타입으로는 인터페이스에서는 프로퍼티를 만들 수 없다.
 
@@ -872,7 +872,8 @@ class BassGuitar(
     //}
 
     override fun movablePerformance() {
-        super<ActionPerformance>.beforePerformance()
+        //super<ActionPerformance>.beforePerformance()
+        beforePerformance()
         println("베이시스트가 악기를 돌리기도 하고 무대를 종횡무진하며 베이스 슬랩를 펼친다.")
     }
     
@@ -882,11 +883,12 @@ class BassGuitar(
     }
  
     // 인터페이스 수만큼 같은 메소드를 가지고 있다면 그 이름으로 override를 하고
-    // 다음과 같이 선언해 둔다.
-    // 그렇게 되면 해당 객채내에서는 내가 어떤 것을 호출할 수 있는지 알게 된다.       
+    // 다음과 같이 선언해 둔다. 그냥 비워둬도 상관없다.
+    // 또는 만일 같은 행위를 한다면 아무거나 하나를 선언하고 
+    // 위코드에서 사용해도 되고 해도 된다.
     override fun beforePerformance() {
-        super<PlacePerformance>.beforePerformance()
-        super<ActionPerformance>.beforePerformance()
+        //super<PlacePerformance>.beforePerformance()
+        //super<ActionPerformance>.beforePerformance()
         //super<SomeInterface>.beforePerformance()
     }
 
