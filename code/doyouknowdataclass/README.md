@@ -115,7 +115,6 @@ class Tshirts(
     val brand: String,
     val type: String,
     val size: Int,
-    val material: String,
 )
 
 //result
@@ -327,7 +326,7 @@ hashCode, toString, equals가 자동으로 재정의된 것을 알 수 있으며
 
 그렇다면 이 data class에서는 그게 가능한건가? 라는 생각을 할 수 있는데 당연히 있다.
 
-다만 자바의 롬복처럼 @ToString 따로 @@EqualsAndHashCode따로 각기 다르게 설정할 수는 없다.
+다만 자바의 롬복처럼 @ToString 따로 @EqualsAndHashCode따로 각기 다르게 설정할 수는 없다.
 
 또한 여기에는 몇 가지 주의할 점이 있기 때문에 그 특징을 알아야 한다.
 
@@ -481,7 +480,34 @@ hashCode, equals, toString, copy에서도 해당 size가 제외되어 있다.
 
 그리고 size에 대한 componentN메소드도 생성되지 않았다.
 
-자바의 롬복처럼 hashCode, equals, toString을 각기 다르게 지정할 수 없지만 생성자에 정의하느냐 바디에 정의하느냐에 따라서 달라진다는 것을 알 수 있다.      
+~~자바의 롬복처럼 hashCode, equals, toString을 각기 다르게 지정할 수 없지만 생성자에 정의하느냐 바디에 정의하느냐에 따라서 달라진다는 것을 알 수 있다.~~
+
+수정 내용: IDE를 이용해서 특정 필드만 선택해서 오버라이딩하면 되더라~
+
+```Kotlin
+data class Tshirts(
+    val brand: String,
+    val size: Int,
+) {
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as Tshirts
+
+        if (brand != other.brand) return false
+        if (size != other.size) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = brand.hashCode()
+        result = 31 * result + size
+        return result
+    }
+}
+```
 
 그렇다면
 
@@ -864,7 +890,7 @@ public class Elvis {
         return ElvisHolder.INNER_ELVIS_INSTANCE;
     }
 
-    // ContextHolder라든가 하는 이런 말들 많이 봤을뗴테 Holder라는 말은 일종의 관용처럼 쓰인다.      
+    // ContextHolder라든가 하는 이런 말들 많이 봤을텐데 Holder라는 말은 일종의 관용처럼 쓰인다.      
     // 즉 바로 어떤 객체를 메모리로 올리지 않고 이 holder가 호출되는 시점에 보유한 객체를 생성해서 반환한다는 의미로 봐도 될까?
     private static class ElvisHolder {
 
