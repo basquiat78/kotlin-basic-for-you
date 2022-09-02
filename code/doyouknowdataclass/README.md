@@ -322,7 +322,7 @@ hashCode, toString, equals가 자동으로 재정의된 것을 알 수 있으며
 
 참고로 component는 생성자의 들어온 순서대로 넘버링 되며 또한 copy라는 것을 제공하는 것도 흥미롭다.
 
-다만 여러분들은 자바의 롬복에서 @ToString나 @@EqualsAndHashCode의 경우에는 재정의시에 of나 exclude를 통해서 특정 필드만으로 재정의하거나 제외시킬수 있었다.
+다만 여러분들은 자바의 롬복에서 @ToString나 @EqualsAndHashCode의 경우에는 재정의시에 of나 exclude를 통해서 특정 필드만으로 재정의하거나 제외시킬수 있었다.
 
 그렇다면 이 data class에서는 그게 가능한건가? 라는 생각을 할 수 있는데 당연히 있다.
 

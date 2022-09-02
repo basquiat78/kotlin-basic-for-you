@@ -36,6 +36,8 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [8. 두 유 노우 데이타 클래스? feat. companion object a.k.a 동반객체](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/doyouknowdataclass)
 
+[9. 봉인해 보셨어요?](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/sealedclass)
+
 
 Wait Next Step! Stay Tuned!
 
