@@ -38,6 +38,8 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [9. 봉인해 보셨어요?](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/sealedclass)
 
+[10. 열거형 타입](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/enumclass)
+
 
 Wait Next Step! Stay Tuned!
 
