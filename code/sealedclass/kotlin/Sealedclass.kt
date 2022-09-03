@@ -1,5 +1,3 @@
-package io.basquiat.musicstore.sealed
-
 /**
  * 연주자가 있고 연주자에게는 이름이 있다.
  */
