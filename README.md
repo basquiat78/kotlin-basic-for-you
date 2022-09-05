@@ -40,6 +40,9 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [10. 열거형 타입](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/enumclass)
 
+[11. Exception을 다루자](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/exception)
+
+[12. Collection을 다루기 전에 알아야 할 몇 가지](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/lambdaexpression)
 
 Wait Next Step! Stay Tuned!
 

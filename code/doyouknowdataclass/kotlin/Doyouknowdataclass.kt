@@ -3,7 +3,6 @@
  * play.kotlinlang.org
  */
 fun main() {
-
     val tshirts = Tshirts("NIKE", TshirtsType.HOOD_LONG, 100)
     //val tshirts = Tshirts("NIKE", TshirtsType.HOOD_LONG)
     with(tshirts) {
