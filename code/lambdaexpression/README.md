@@ -115,7 +115,7 @@ predicate라는 변수명으로 람다를 받고 있다.
 
 그렇다. filter는 고차함수인 것이다.      
 
-# invoke() in Kotiln
+# invoke() in Kotlin
 
 인자가 predicate로 선언되었지만 뒤에 정의된 모습을 보면 람다라는 것을 알 수 있다.
 
