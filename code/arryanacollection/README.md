@@ -617,9 +617,11 @@ fun main() {
     immutableToMutableSet.add("d")
     println("immutableToMutableSet : $immutableToMutableSet")
 
-    // treeSet과 관련해서는 따로 제공하지 않고 직접 생성해서 사용한다.
+    // treeSet과 관련해서는 따로 제공하지 않고 직접 생성해서 사용한다. -> 잘못된 정보
+    // sortedSetOf가 TreeSet을 반환한다.!!!
     // 들어온 순서 상관없이 오름차순으로 정렬된다.
-    val treeSet = TreeSet<String>()
+    //val treeSet = TreeSet<String>()
+    val treeSet = sortedSetOf<String>()
     treeSet.add("d")
     treeSet.add("c")
     treeSet.add("z")
