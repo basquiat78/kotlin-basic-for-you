@@ -46,7 +46,7 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [13. Array And Collection Framework feat. operator overloading](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/arryanacollection)
 
-[13. Collection sort feat. 구조 분해 선언 (destructuring declaration)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/collectionsort)
+[14. Collection sort feat. 구조 분해 선언 (destructuring declaration)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/collectionsort)
 
 Wait Next Step! Stay Tuned!
 
