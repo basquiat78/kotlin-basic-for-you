@@ -48,6 +48,8 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [14. Collection sort feat. 구조 분해 선언 (destructuring declaration)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/collectionsort)
 
+[15. 컬렉션 함수 (Aggregation, Filter Deep Dive 편)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/aggregationandfilter)
+
 Wait Next Step! Stay Tuned!
 
 # 잘못된 부분이 있다면 피드백 부탁해요~
