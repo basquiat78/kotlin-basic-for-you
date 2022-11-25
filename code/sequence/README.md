@@ -223,7 +223,7 @@ fun main() {
 
 아마도 LinkedList같은 데서 사용하게 되면 느려질 것이라는 의미일 것이다.      
 
-왜냐하면 ArrayList처럼 Ramdon access가 불가능한 리스트가 LinkedList이기 대문이다.      
+왜냐하면 ArrayList처럼 Ramdon access가 불가능한 리스트가 LinkedList이기 때문이다.      
 
 따라서 어떤 특정 요소를 접근할려면 첫번째 노드부터 접근해야하는 단점이 존재하기 때문일 것이다.       
 
