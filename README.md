@@ -56,6 +56,10 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [18. 위임(Delegation)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/delegation)
 
+# more detail kotlin
+
+[19. 지연초기화(About Lazy)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/aboutlazy)
+
 Wait Next Step! Stay Tuned!
 
 # 잘못된 부분이 있다면 피드백 부탁해요~
