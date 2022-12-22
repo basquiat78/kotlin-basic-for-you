@@ -56,11 +56,13 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [18. 위임(Delegation)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/delegation)
 
+[19. 위임(Delegation)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/delegation)
+
 # more detail kotlin
 
-[19. 지연초기화(About Lazy)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/aboutlazy)
+[20. 지연초기화(About Lazy)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/aboutlazy)
 
-[20. vararg와 호출 가능 참조](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/varargandcallablereference)
+[21. generics](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/generics)
 
 Wait Next Step! Stay Tuned!
 
