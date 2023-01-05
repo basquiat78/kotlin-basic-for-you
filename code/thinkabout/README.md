@@ -159,6 +159,6 @@ fun main() {
 
 그래서 newOtherList에 새로운 요소를 추가하게 되면 otherMutableList에도 변이가 발생하게 된다.         
 
-## next Thing About???? Stay Tuned!!!!
+## Next Think About???? Stay Tuned!!!!
 
 
