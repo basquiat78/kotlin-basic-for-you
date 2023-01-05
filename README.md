@@ -70,7 +70,7 @@ Wait Next Step! Stay Tuned!
 
 따라서 한번쯤은 생각해 볼만한 내용들을 업데이트한다.
 
-[Think About]((https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/thinkabout))
+[Think About](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/thinkabout)
 
 # 잘못된 부분이 있다면 피드백 부탁해요~
 
