@@ -74,6 +74,10 @@ Wait Next Step! Stay Tuned!
 
 [Think About](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/thinkabout)
 
+## Think About Agenda
+1. Pure Or Not
+2. Curring
+
 # 잘못된 부분이 있다면 피드백 부탁해요~
 
 헤이 브로~~ PR 또는 funnyjazz@naver.com으로 부탁해요~~ 👊
