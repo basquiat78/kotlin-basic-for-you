@@ -58,6 +58,8 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [21. 동시성(Concurrency), Part I. 코루틴](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/coroutine)
 
+[22. 동시성(Concurrency), Part II. 코루틴](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/concurrentcommunity)
+
 # more detail kotlin
 
 [19. 지연초기화(About Lazy)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/aboutlazy)
