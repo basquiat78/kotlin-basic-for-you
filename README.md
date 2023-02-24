@@ -62,6 +62,8 @@ IDE세팅이 되어 있다면 IDE를 적극 활용해도 무방하다.
 
 [23. 동시성(Concurrency), Part III. 자바 동시성](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/concurrentjava)
 
+[24. File과 I/O Stream을 다루는 방법](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/fileiostream)
+
 # more detail kotlin
 
 [19. 지연초기화(About Lazy)](https://github.com/basquiat78/kotlin-basic-for-you/tree/main/code/aboutlazy)
